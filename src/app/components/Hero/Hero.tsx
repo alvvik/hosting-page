@@ -8,8 +8,7 @@ const list = [
   <>
     Gwarancja pelnego wzrotu pieniedzy w ciagu 24 godzin od zakupu <br />
     <span className="text-fluid-small text-text-muted">
-      {" "}
-      (Nie dotyczy zamówień opłaconych za pomocą PaySafeCard.{" "}
+      (Nie dotyczy zamówień opłaconych za pomocą PaySafeCard.
       <Link className="underline" href={"/regulamin"}>
         Regulamin
       </Link>
@@ -19,14 +18,14 @@ const list = [
 ];
 export default function Hero() {
   return (
-    <section className="flex justify-center items-center  gap-4 flex-col bg-surface p-8">
+    <section className="flex justify-center items-center  gap-4 flex-col ">
       <h1 className="text-fluid-h1 md:text-4xl lg:text-5xl xl:text-6xl text-center font-bold">
         Stworz serwer minecraft{" "}
         <span className="block ">
           <ChangingText texts={texts} />
         </span>
       </h1>
-      <span className="bg-cta text-center text-cta-text p-1 rounded-2xl backdrop-blur-2xl shadow-lg shadow-cta text-fluid-hero font-bold">
+      <span className="bg-cta/90 backdrop-blur-3xl text-center text-cta-text p-1 rounded-2xl  shadow-lg shadow-cta text-fluid-hero font-bold">
         w mniej niz minute!
       </span>
       <div className="flex gap-4 flex-col md:flex-row">
@@ -41,7 +40,13 @@ export default function Hero() {
         <ul className="text-center">
           {list.map((item) => {
             return (
-              <li className="list-disc list-inside font-semibold">{item}</li>
+              <li
+                className="list-disc list-inside font-semibold"
+                key={list.indexOf(item)}
+              >
+                {" "}
+                {item}
+              </li>
             );
           })}
         </ul>
