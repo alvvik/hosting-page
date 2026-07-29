@@ -1,0 +1,51 @@
+import Link from "next/link";
+import ButtonCustom from "../ButtonCustom";
+import ChangingText from "../ChangingText";
+
+const texts: string[] = ["szybko", "bezpiecznie", "bez problemów", "tanio"];
+const list = [
+  "Ponad 1000 zadowolonych klientow",
+  <>
+    Gwarancja pelnego wzrotu pieniedzy w ciagu 24 godzin od zakupu <br />
+    <span className="text-fluid-small text-text-muted">
+      {" "}
+      (Nie dotyczy zamówień opłaconych za pomocą PaySafeCard.{" "}
+      <Link className="underline" href={"/regulamin"}>
+        Regulamin
+      </Link>
+      )
+    </span>
+  </>,
+];
+export default function Hero() {
+  return (
+    <section className="flex justify-center items-center  gap-4 flex-col bg-surface p-8">
+      <h1 className="text-fluid-h1 md:text-4xl lg:text-5xl xl:text-6xl text-center font-bold">
+        Stworz serwer minecraft{" "}
+        <span className="block ">
+          <ChangingText texts={texts} />
+        </span>
+      </h1>
+      <span className="bg-cta text-center text-cta-text p-1 rounded-2xl backdrop-blur-2xl shadow-lg shadow-cta text-fluid-hero font-bold">
+        w mniej niz minute!
+      </span>
+      <div className="flex gap-4 flex-col md:flex-row">
+        <ButtonCustom>
+          <Link href={"panel.example.com"}>Stwórz swój serwer</Link>
+        </ButtonCustom>
+        <ButtonCustom className=" bg-background text-cta  ring ring-cta border-b-2 border-cta  hover:bg-cta/60 hover:shadow-cta">
+          Sprawdź naszą oferte
+        </ButtonCustom>
+      </div>
+      <div>
+        <ul className="text-center">
+          {list.map((item) => {
+            return (
+              <li className="list-disc list-inside font-semibold">{item}</li>
+            );
+          })}
+        </ul>
+      </div>
+    </section>
+  );
+}
