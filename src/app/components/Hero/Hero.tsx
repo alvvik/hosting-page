@@ -28,11 +28,11 @@ export default function Hero() {
       <span className="bg-cta/90 backdrop-blur-3xl text-center text-cta-text p-1 rounded-2xl  shadow-lg shadow-cta text-fluid-hero font-bold">
         w mniej niz minute!
       </span>
-      <div className="flex gap-4 flex-col md:flex-row">
+      <div className=" my-8 flex gap-4 flex-col md:flex-row">
         <ButtonCustom>
           <Link href={"panel.example.com"}>Stwórz swój serwer</Link>
         </ButtonCustom>
-        <ButtonCustom className=" bg-background text-cta  ring ring-cta border-b-2 border-cta  hover:bg-cta/60 hover:shadow-cta">
+        <ButtonCustom className=" bg-surface text-cta  ring ring-cta border-b-2 border-cta  hover:bg-cta/60 hover:shadow-cta hover:text-cta-text">
           Sprawdź naszą oferte
         </ButtonCustom>
       </div>
