@@ -71,7 +71,10 @@ const offers: OfferProp[] = [
 ];
 export default function Pricing() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 px-0 py-8 ">
+    <section
+      className="flex flex-col items-center justify-center gap-4 px-0 py-8 "
+      id="pricing"
+    >
       <h2 className="text-fluid-h2 font-semibold">Nasza oferta</h2>
       <p className="text-fluid-small text-text-muted text-center">
         Wybierz plan, który najlepiej odpowiada Twoim potrzebom i ciesz się

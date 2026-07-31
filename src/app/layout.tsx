@@ -26,10 +26,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full  antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col  ">
-        <Header />
+      <body className="min-h-full flex flex-col smooth-scroll">
+        <div className="sticky top-0 z-50 w-full  backdrop-blur-sm transition-all duration-300 ease-out">
+          <Header />
+        </div>
         {children}
       </body>
     </html>

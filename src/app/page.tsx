@@ -8,7 +8,7 @@ import Pricing from "./components/Sections/Pricing/Pricing";
 export default function Home() {
   return (
     <main className="">
-      <div className="bg-surface p-4">
+      <div className="bg-surface p-4 h-screen flex flex-col justify-center items-center">
         <Hero />
       </div>
       <Description />

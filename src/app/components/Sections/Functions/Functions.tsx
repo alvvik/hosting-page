@@ -38,7 +38,10 @@ const items: ItemProp[] = [
 ];
 export default function Functions() {
   return (
-    <section className="grid gap-4 p-4 md:grid-cols-2 md:gap-6 md:max-w-5xl md:mx-auto md:items-start">
+    <section
+      className="grid gap-4 p-4 md:grid-cols-2 md:gap-6 md:max-w-5xl md:mx-auto md:items-start"
+      id="functions"
+    >
       {items.map((item) => {
         return (
           <div
