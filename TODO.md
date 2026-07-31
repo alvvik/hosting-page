@@ -4,4 +4,4 @@
 
 # DOING
 
-- add items in functions and map them
+https://dev.to/marina_eremina/how-to-import-svg-files-in-a-nextjs-project-2025-3m80
