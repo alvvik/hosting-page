@@ -13,7 +13,6 @@ const links = [
   { label: "Jak to działa", href: "#jaktodziala" },
 
   { label: "Cennik", href: "#pricing" },
-  { label: "Zaloguj się", href: "login" },
 ];
 
 export default function Header() {
@@ -34,7 +33,36 @@ export default function Header() {
             <span>BlockVerse</span>
           </Link>
 
-          <MenuButton className="inline-flex items-center justify-center rounded-xl p-2 transition-all duration-300 ease-out focus:outline-none focus:ring-2 md:hidden">
+          <nav className="hidden items-center gap-8 lg:flex">
+            <ul className="flex items-center gap-6">
+              {links.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="block rounded-lg px-3 py-2 transition-all ring ring-cta font-semibold text-cta text-center"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className="flex items-center gap-4">
+              <Link
+                href="/login"
+                className="block rounded-lg px-3 py-2 transition-all ring ring-cta font-semibold text-cta text-center"
+              >
+                Zaloguj się
+              </Link>
+              <Link
+                href="/register"
+                className="block rounded-lg px-3 py-2 transition-all font-semibold bg-cta text-cta-text text-center"
+              >
+                Zarejestruj się
+              </Link>
+            </div>
+          </nav>
+
+          <MenuButton className="inline-flex items-center justify-center rounded-xl p-2 transition-all duration-300 ease-out focus:outline-none focus:ring-2 lg:hidden">
             <span className="sr-only">Otwórz menu</span>
             <span className="relative h-6 w-6">
               <Menu
@@ -52,9 +80,9 @@ export default function Header() {
             </span>
           </MenuButton>
 
-          <MenuItems className="absolute left-0 top-full z-50 w-full px-4 py-4 outline-none data-closed:hidden md:static md:block md:w-auto md:border-0 md:bg-transparent md:p-0 shadow-lg rounded-b-2xl px-4">
-            <nav>
-              <ul className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6 bg-surface">
+          <MenuItems className="absolute left-0 top-full z-50 w-full px-4 py-4 outline-none data-closed:hidden lg:hidden shadow-lg rounded-b-2xl">
+            <nav className="lg:w-full lg:flex lg:items-center lg:justify-between lg:gap-8">
+              <ul className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-6 bg-surface">
                 {links.map((link) => (
                   <li key={link.href}>
                     <MenuItem>
@@ -67,10 +95,21 @@ export default function Header() {
                     </MenuItem>
                   </li>
                 ))}
-                <li className="block rounded-lg px-3 py-2  transition-all   font-semibold bg-cta text-cta-text text-center">
-                  <Link href="/register">Zarejestruj się</Link>
-                </li>
               </ul>
+              <div className="mt-4 flex flex-col gap-4 lg:mt-0 lg:flex-row lg:items-center lg:gap-4">
+                <Link
+                  href="/login"
+                  className="block rounded-lg px-3 py-2 transition-all ring ring-cta font-semibold text-cta text-center"
+                >
+                  Zaloguj się
+                </Link>
+                <Link
+                  href="/register"
+                  className="block rounded-lg px-3 py-2 transition-all font-semibold bg-cta text-cta-text text-center"
+                >
+                  Zarejestruj się
+                </Link>
+              </div>
             </nav>
           </MenuItems>
         </div>
