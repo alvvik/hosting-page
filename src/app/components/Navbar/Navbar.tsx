@@ -9,13 +9,13 @@ import {
 import { Menu, X } from "lucide-react";
 import Logo from "@/public/logo.svg";
 const links = [
-  { label: "Funkcje", href: "#functions" },
-  { label: "Jak to działa", href: "#jaktodziala" },
+  { label: "Funkcje", href: "/#functions" },
+  { label: "Jak to działa", href: "/#jaktodziala" },
 
-  { label: "Cennik", href: "#pricing" },
+  { label: "Cennik", href: "/#pricing" },
 ];
 
-export default function Header() {
+export default function Navbar() {
   return (
     <HeadlessMenu as="header" className="relative bg-surface ">
       {({ open }) => (

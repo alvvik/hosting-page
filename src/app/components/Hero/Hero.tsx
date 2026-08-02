@@ -33,7 +33,7 @@ export default function Hero() {
           <Link href={"panel.example.com"}>Stwórz swój serwer</Link>
         </ButtonCustom>
         <ButtonCustom className=" bg-surface text-cta  ring ring-cta border-b-2 border-cta  hover:bg-cta/60 hover:shadow-cta hover:text-cta-text">
-          <a href={"#pricing"}>Zobacz cennik</a>
+          <a href={"/#pricing"}>Zobacz cennik</a>
         </ButtonCustom>
       </div>
       <div>
