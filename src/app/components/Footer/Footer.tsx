@@ -30,7 +30,12 @@ export default function Footer() {
           href="/"
           className="flex items-center gap-2 text-lg font-bold tracking-wide "
         >
-          <Logo width={40} height={40} />
+          <Logo
+            width={40}
+            height={40}
+            alt="BlocksVerse Logo"
+            aria-hidden="true"
+          />
           BlocksVerse
         </Link>
 

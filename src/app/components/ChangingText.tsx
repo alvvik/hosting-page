@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 interface ChangingTextProps {
-  texts: String[];
+  texts: string[];
   intervalTime?: number;
 }
 

@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   title: "Blockverse",
   description: "Blockverse hosting - best game server hosting",
   icons: {
-    icon: "/logo.ico",
-    shortcut: "/logo.ico",
-    apple: "/logo.svg",
+    icon: "/logo-512.png",
+    shortcut: "/logo-512.png",
+    apple: "/logo-512.png",
   },
   manifest: "/manifest.json",
 };
