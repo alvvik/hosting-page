@@ -1,15 +1,12 @@
 import { Button, ButtonProps as HeadlessButtonProps } from "@headlessui/react";
 import { ReactNode } from "react";
-import { clsx, ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
+import { cn } from "@/lib/utils";
 interface ButtonCustomProps extends HeadlessButtonProps {
   children?: ReactNode;
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
 }
-function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
+
 export default function ButtonCustom({
   children,
   leftIcon,
