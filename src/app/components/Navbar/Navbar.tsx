@@ -9,10 +9,10 @@ import {
 import { Menu, X } from "lucide-react";
 import Logo from "@/public/logo.svg";
 const links = [
-  { label: "Funkcje", href: "/#functions" },
+  { label: "Funkcje", href: "/#funkcje" },
   { label: "Jak to działa", href: "/#jaktodziala" },
 
-  { label: "Cennik", href: "/#pricing" },
+  { label: "Cennik", href: "/#cennik" },
 ];
 
 export default function Navbar() {
