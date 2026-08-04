@@ -14,8 +14,8 @@ const LatoFont = Lato({
 
 
 export const metadata: Metadata = {
-  title: "Blockverse",
-  description: "Blockverse hosting - best game server hosting",
+  title: "Blockverse - Twój hosting!",
+  description: "Blockverse hosting - najlepsze hostowanie serwerów minecraft",
   icons: {
     icon: "/logo-512.png",
     shortcut: "/logo-512.png",

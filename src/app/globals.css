@@ -52,7 +52,6 @@ body {
   font-family: var(--font-lato), Arial, Helvetica, sans-serif;
  
 }
-@import "tailwindcss";
 
 @theme {
   --text-fluid-hero: clamp(2.25rem, 4vw + 1rem, 4rem);

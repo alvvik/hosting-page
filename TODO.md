@@ -1,4 +1,1 @@
-- [ ] Create error.tsx
-- [ ] Create not-found.tsx
-- [ ] Add loading.tsx
-- [ ] Add rules page.tsx
+- [x] Create not-found.tsx
